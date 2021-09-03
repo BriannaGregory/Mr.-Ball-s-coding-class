@@ -1,34 +1,14 @@
 # Brianna Gregory
-# 9/2/21
-# All about the function
-# Doing the all about the function program
-def myCountfun(Mystr):
-    ucount1 = 0
-    lcount1 = 0
-    print(Mystr)
-    for c in Mystr:
+# 8/26/2021
+# what if and else
+# doing the what if program
 
-        if c.isupper():
-            ucount1 += 1
-        else:
-            lcount1 += 1
+answer = input("please enter an number between 10 and 25: ")
+numanswer = int(answer)
 
-    return ucount1,lcount1
-
-answer = input("Please enter a string: ")
-
-letter = answer.replace(" ", "")
-if letter.isalpha():
-    ucount,lcount = myCountfun(answer)
-    print(f"Your upper count was: {ucount} and your lower count was {lcount}")
+if numanswer < 10:
+    print("cant you follow directions?! your answer is less than 10")
+elif numanswer > 25:
+    print("is this really that hard? your answer was greater than 25")
 else:
-    print("Please only enter letters, no numbers!")
-
-
-
-
-
-
-
-
-
+    print("great job! you did it")
